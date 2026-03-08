@@ -1,0 +1,32 @@
+2026-03-08 16:25:07,166 - agent - INFO - middleware.py:27 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-08 16:25:07,167 - agent - DEBUG - middleware.py:29 - [log_before_model]HumanMessage | 给我生成我的使用报告
+2026-03-08 16:25:10,167 - agent - INFO - middleware.py:9 - [tool monitor]执行工具：get_user_id
+2026-03-08 16:25:10,168 - agent - INFO - middleware.py:10 - [tool monitor]传入参数：{}
+2026-03-08 16:25:10,169 - agent - INFO - middleware.py:13 - [tool monitor]工具get_user_id调用成功
+2026-03-08 16:25:10,169 - agent - INFO - middleware.py:27 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-08 16:25:10,178 - agent - DEBUG - middleware.py:29 - [log_before_model]ToolMessage | 1010
+2026-03-08 16:25:12,765 - agent - INFO - middleware.py:9 - [tool monitor]执行工具：get_current_month
+2026-03-08 16:25:12,765 - agent - INFO - middleware.py:10 - [tool monitor]传入参数：{}
+2026-03-08 16:25:12,766 - agent - INFO - middleware.py:13 - [tool monitor]工具get_current_month调用成功
+2026-03-08 16:25:12,767 - agent - INFO - middleware.py:27 - [log_before_model]即将调用模型，带有5条消息。
+2026-03-08 16:25:12,767 - agent - DEBUG - middleware.py:29 - [log_before_model]ToolMessage | 2025-11
+2026-03-08 16:25:14,415 - agent - INFO - middleware.py:9 - [tool monitor]执行工具：fill_context_for_report
+2026-03-08 16:25:14,416 - agent - INFO - middleware.py:10 - [tool monitor]传入参数：{}
+2026-03-08 16:25:14,417 - agent - INFO - middleware.py:13 - [tool monitor]工具fill_context_for_report调用成功
+2026-03-08 16:25:14,417 - agent - INFO - middleware.py:27 - [log_before_model]即将调用模型，带有7条消息。
+2026-03-08 16:25:14,418 - agent - DEBUG - middleware.py:29 - [log_before_model]ToolMessage | 
+2026-03-08 16:25:17,224 - agent - INFO - middleware.py:9 - [tool monitor]执行工具：fetch_external_data
+2026-03-08 16:25:17,224 - agent - INFO - middleware.py:10 - [tool monitor]传入参数：{'user_id': '1010', 'time_': '2025-11'}
+2026-03-08 16:25:17,226 - agent - INFO - middleware.py:13 - [tool monitor]工具fetch_external_data调用成功
+2026-03-08 16:25:17,228 - agent - INFO - middleware.py:27 - [log_before_model]即将调用模型，带有9条消息。
+2026-03-08 16:25:17,228 - agent - DEBUG - middleware.py:29 - [log_before_model]ToolMessage | {"特征": "130㎡四居 | 三代同堂 | 通体砖", "效率": "覆盖率:87%\\n手动辅助清扫:1次/天\\n定时清扫使用率:75%", "耗材": "电池衰减:20%\\n边刷寿命:剩余20天", "对比": "大户型中操作便捷性与同类持平"}
+2026-03-08 16:25:19,533 - agent - INFO - middleware.py:9 - [tool monitor]执行工具：rag_summarize
+2026-03-08 16:25:19,533 - agent - INFO - middleware.py:10 - [tool monitor]传入参数：{'query': '扫地机器人电池保养和边刷更换建议'}
+2026-03-08 16:25:22,620 - agent - INFO - middleware.py:13 - [tool monitor]工具rag_summarize调用成功
+2026-03-08 16:25:22,621 - agent - INFO - middleware.py:27 - [log_before_model]即将调用模型，带有11条消息。
+2026-03-08 16:25:22,621 - agent - DEBUG - middleware.py:29 - [log_before_model]ToolMessage | 电池保养建议：避免长时间满电或完全放电，长期不用时保持电量在40%-60%，存放于干燥阴凉处。边刷更换建议：当边刷出现明显磨损、变形或清洁效果下降时应及时更换，通常每6-12个月更换一次，具体视使用频率而定。
+2026-03-08 16:25:24,671 - agent - INFO - middleware.py:9 - [tool monitor]执行工具：rag_summarize
+2026-03-08 16:25:24,672 - agent - INFO - middleware.py:10 - [tool monitor]传入参数：{'query': '大户型扫地机器人使用优化建议'}
+2026-03-08 16:25:28,267 - agent - INFO - middleware.py:13 - [tool monitor]工具rag_summarize调用成功
+2026-03-08 16:25:28,268 - agent - INFO - middleware.py:27 - [log_before_model]即将调用模型，带有13条消息。
+2026-03-08 16:25:28,269 - agent - DEBUG - middleware.py:29 - [log_before_model]ToolMessage | 针对大户型扫地机器人使用优化，建议选择大尘盒容量、长续航（支持自动回充续扫）及强吸力机型；优先采用激光导航或视觉导航以提升建图与覆盖效率；合理设置虚拟墙或禁区避免重复清扫；定期清理滚刷和滤网以维持性能；利用多楼层地图记忆功能（若支持）适配复式或别墅场景。
